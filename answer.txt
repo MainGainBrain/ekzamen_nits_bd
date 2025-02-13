@@ -1,0 +1,20 @@
+ОТВЕТ: Имя - Натан, Айпи адресс - 10.10.5.59
+Запросы
+SELECT *
+FROM security_journal
+WHERE vulnerability_id = 'УБИ.041'
+AND discovery_date BETWEEN '2024-10-10' AND '2024-10-10';
+
+SELECT application, session_time , id
+FROM applications
+WHERE application = 'Mozila Firefox'
+AND session_time BETWEEN '17:20' AND '17:30';
+
+SELECT id, mac_address, ip_address
+FROM pc
+WHERE id IN (17, 537, 592, 820, 939);
+
+SELECT e.id, e.name, p.ip_address
+FROM employees e
+JOIN pc p ON e.id = p.id
+WHERE p.ip_address = '10.10.5.59';

@@ -1,0 +1,14 @@
+  113  mkdir ekzamen_fomin
+  112  cd ekzamen_fomin/
+  113  git clone -b https://github.com/MaksimFomin06/fomin.git~
+  114  git clone https://github.com/MaksimFomin06/fomin.git~
+  115  git clone https://github.com/MaksimFomin06/fomin.git
+  116  git checkout fomin_branch
+  117  cd fomin/
+  118  git checkout fomin_branch
+  119  ды
+  120  ls
+  121  git add *
+  122  git commit -m "answer"
+  123  git push
+  124  history
