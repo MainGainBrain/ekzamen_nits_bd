@@ -1,0 +1,15 @@
+1  git clone -b polyakov_branch https://github.com/Toxiosik/polyakov
+  2  killall dbeaver
+  3  ps aux | grep dbeaver
+  4  touch file.txt
+  5  git add.
+  6  git add file.txt
+  7  git commit -m Нарушитель
+  8  git commit -m Нарушитель polyakov
+  9  git config --global user.name Toxiosik
+  10  git config --global user.email green19rus@gmail.com
+  11  git commit -m Нарушитель polyakov
+  12  git commit -m Нарушитель
+  13  git push origin polyakov
+  14  git push origin polyakov_branch
+  15  history
