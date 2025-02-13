@@ -1,0 +1,78 @@
+Бастиан	Алексиевич		10.10.3.31
+
+1. ввел
+SELECT *
+FROM security_journal
+WHERE vulnerability_id = 'УБИ.041'
+  AND discovery_date = '2024-10-10'
+
+нашли vlan = 460 здесь сработала уязвимость
+2. SELECT DISTINCT 
+    p.id AS id,
+    p.ip_address
+FROM pc p
+JOIN applications a ON p.id = a.source_pc
+WHERE p.vlan_pc = '460'
+  AND a.session_time = '17:25'
+  AND a.application = 'Mozila Firefox';
+нашли несколько source_pc = 
+19
+46
+54
+на которых была уязвимость
+3. SELECT 
+    e.uid AS uid_employee,
+    e.name AS employee_name,
+    e.surname AS employee_surname,
+    p.id AS pc_id,
+    er.report
+FROM employees e
+JOIN pc p ON e.pc = p.id
+LEFT JOIN employee_report er ON e.uid = er.uid_employee
+WHERE p.id IN (19, 46, 54)
+но алиби верить нельзя и я начал проверять.
+
+4. SELECT 
+    e.uid AS uid_employee,
+    e.name AS employee_name,
+    e.surname AS employee_surname,
+    e.pc AS pc
+FROM employees e
+WHERE e.name IN ('Алиса', 'Натан', 'Август');
+взял только первые три, ибо алиса каменских не фигурирует
+5. SELECT 
+    e.uid AS uid_employee,
+    e.name AS employee_name,
+    e.surname AS employee_surname,
+    p.id AS pc_id,
+    er.report
+FROM employees e
+JOIN pc p ON e.pc = p.id
+LEFT JOIN employee_report er ON e.uid = er.uid_employee
+WHERE p.id IN (19, 46, 54, 34, 38, 16, 3)
+Снова проверил и просмотрел алиби.
+Не сходятся алиби Алексея и Дианы, ведь она ушла на больничный.
+Но сам себе алексей не смог бы уязвимость запустить, поэтому нужно другой.
+SELECT DISTINCT
+    e.uid AS employee_uid,
+    e.name,
+    e.surname, 
+    p.id AS pc_id,
+    p.ip_address,
+    er.report
+FROM security_journal sj
+JOIN pc p ON sj.vlan = p.vlan_pc
+JOIN employees e ON e.pc = p.id
+LEFT JOIN employee_report er ON e.uid = er.uid_employee
+JOIN applications a ON a.source_pc = p.id
+WHERE sj.discovery_date = '2024-10-10'
+  AND a.session_time = '17:25'
+ Проверим кто заходил в это время
+и находим 1994	Бастиан	Алексиевич	47	10.10.3.31	"К сожалению, не выдержал темп работы, поэтому вынужден был уволиться. Меня еще не устраивала степень информационной защиты в нашей компании"
+
+он уволен. по запросу
+select *
+from employees e 
+where status = '14'
+
+выдает этого сотрудника бастиана. Он с laptop как раз зашел и накуралесил.
