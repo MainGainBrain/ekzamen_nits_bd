@@ -1,0 +1,379 @@
+    1  git --version
+    2  зцв
+    3  pwd
+    4  pwd
+    5  nano
+    6  mkdir k
+    7  > f
+    8  > cat f
+    9  cat f
+   10  ls
+   11  chmod 777 f
+   12  sudo su
+   13  sudo chmod 777 f
+   14  ip
+   15  clear
+   16  rm f
+   17  ls
+   18  cd k
+   19  cd ..
+   20  rmdir k
+   21  touch s
+   22  echo 1
+   23  grep . cat
+   24  history
+   25  clear
+   26  ip
+   27  ifconfig
+   28  systemctl
+   29  useradd
+   30  userdel
+   31  ps
+   32  kill 1803
+   33  clear
+   34  vim ~/.bashrc
+   35  source ~/.bashrc
+   36  vim ~/.bashrc
+   37  vim ~/.bashrc
+   38  vim ~/.bashrc
+   39  source ~/.bashrc
+   40  clear
+   41  cd ~
+   42  mkdir tikhomirova_git
+   43  cd tikhomirova_git
+   44  git config --global user.name "Zlata"
+   45  git config --global user.email algoneuro1@gmail.com
+   46  git config --list
+   47  vim ~/.gitconfig
+   48  git config --global init.defaultBranch main
+   49  git init
+   50  clear
+   51  ls
+   52  ls ..
+   53  ls -a
+   54  touch file1.txt file2.txt
+   55  ls -a > file1.txt
+   56  whoami > file2.txt
+   57  cat file1.txt
+   58  cat file2.txt
+   59  git add file2.txt
+   60  git status
+   61  git commit -m 'Add new file'
+   62  git status
+   63  cat >> file2.txt
+   64  groups >> file2.txt
+   65  chown -R $USERNAME:$(id -g $USERNAME) /c/Users/user57.config
+   66  chown -R "$USERNAME":$(id -g "$USERNAME") /c/Users/user57.config
+   67  touch ~/.hushlogin
+   68  groups >> file2.txt
+   69  vim /etc/bash.bashrc
+   70  powershell -Command "Get-LocalUser | Where-Object {$_.Name -eq $env:USERNAME} | Select-Object -ExpandProperty Groups | ForEach-Object {$_.Name}" >> file2.txt
+   71  cat file2.txt
+   72  > file2.txt
+   73  whoami > file2.txt
+   74  groups >> file2.txt
+   75  powershell -Command "Get-LocalUser | Where-Object {$_.Name -eq $env:USERNAME} | Select-Object -ExpandProperty Groups | ForEach-Object {$_.Name}" >> file2.txt
+   76  cat file2.txt
+   77  > file2.txt
+   78  groups >> file2.txt
+   79  > file2.txt
+   80  whoami > file2.txt
+   81  groups >> file2.txt
+   82  cat file2.txt
+   83  git add file2.txt
+   84  git commit -m 'Added info about groups'
+   85  git add file1.txt
+   86  git commit -m 'Add file1.txt with ls'
+   87  git log
+   88  git checkout c8778
+   89  cat file1.txt
+   90  cat file2.txt
+   91  git log
+   92  clear
+   93  exit
+   94  quit
+   95  cd tikhomirova_git
+   96  git reflog
+   97  git checkout c03aa
+   98  git checkout main
+   99  git config --global init.defaultBranch master
+  100  cd tikhomirova_git
+  101  cd ..
+  102  git config --global init.defaultBranch master
+  103  cd tikhomirova_git
+  104  git branch
+  105   git branch -m master
+  106  git logs
+  107  git log
+  108  git checkout b8a9e
+  109  git branch dev
+  110  git checkout вум
+  111  git checkout dev
+  112  pwd > file3.txt
+  113  cat pwd.txt
+  114  cat file3.txt
+  115  git add file3.txt
+  116  git commit -m file3.txt "Add file with pwd"
+  117  git commit -m "Add file with pwd"
+  118  clear
+  119  cat >> file3.txt
+  120  git add file3.txt
+  121  git commit -m "Added hello to file3.txt"
+  122  git log
+  123  git log
+  124  git checkout master
+  125  git log
+  126  git branch
+  127  git branch web
+  128  git checkout web
+  129  cat > file4.txt
+  130  git add file4.txt
+  131  git commit -m "Added new file file4.txt"
+  132  cat >> file4.txt
+  133  cat file4.txt
+  134  git add file4.txt
+  135  git commit -m "Added 000 to file4.txt"
+  136  git log
+  137  git checkout master
+  138  cat >> file1.txt
+  139  git add file1.txt
+  140  git commit -m "Added info to file1.txt"
+  141  cat >> file1.txt
+  142  git add file1.txt
+  143  git commit -m "Added info 2 to file1.txt"
+  144  git log
+  145  git checkout c03aa
+  146  git reflog
+  147  git log --oneline --graph --all
+  148  ды
+  149  ls
+  150  cd tikhomirova_git
+  151  ls
+  152  ls -a
+  153  find / -name "tikhomirova_*"
+  154  find .  -name "tikhomirova_*"
+  155  bash make_repo.sh
+  156  cd research_center
+  157  cd ./research_center
+  158  bash make_repo.sh
+  159  cd tikhomirova_git
+  160  git log
+  161  git checkout f6e2d
+  162  git checkout f6e2c
+  163  git branch dev
+  164  git checkout dev
+  165  pwd > file3.txt
+  166  git add file3.txt
+  167  git commit -m "Add file with pwd"
+  168  cat >> file3.txt
+  169  git add file3.txt
+  170  git commit -m "Added hello to file3.txt"
+  171  git checkout master
+  172  git log
+  173  git branch web
+  174  git checkout web
+  175  cat > file4.txt
+  176  git add file4.txt
+  177  git commit -m "Added new file file4.txt"
+  178  cat >> file4.txt
+  179  git add file4.txt
+  180  git commit -m "Added 000 to file4.txt"
+  181  git checkout master
+  182  git log
+  183  cat >> file1.txt
+  184  git add file1.txt
+  185  git commit -m "Added info to file1.txt"
+  186  cat >> file1.txt
+  187  git add file1.txt
+  188  git commit -m "Added info 2 to file1.txt"
+  189  git log
+  190  git checkout cde42
+  191  git log --oneline --graph --all
+  192  git checkout web
+  193  git merge dev
+  194  git log
+  195  git log
+  196  git log --oneline --graph --all
+  197  git checkout master
+  198  git merge web
+  199  git log
+  200  cd tikhomirova_git
+  201  log
+  202  git log
+  203  git checkout master
+  204  git log
+  205  git branch
+  206  git log --oneline --graph --all
+  207  git reset --hard HEAD~1
+  208  git log --oneline --graph --all
+  209  git checkout c03aa1
+  210  git log --oneline --graph --all
+  211  git checkout web
+  212  git log
+  213  :q
+  214  git log --oneline --graph --all
+  215  git checkout master
+  216  git merge web
+  217  git log
+  218  git log --oneline --graph --all
+  219  git stash
+  220  cd ..
+  221  clear
+  222  ls
+  223  cd Documents
+  224  ls
+  225  cd research_center
+  226  git clone https://github.com/zlatatikhomirova/ctsg_science_center_edu.git
+  227  cd ..
+  228  cd research_center
+  229  mkdir ctsg_github
+  230  cd  ctsg_github
+  231  git clone https://github.com/zlatatikhomirova/ctsg_science_center_edu.git
+  232  cd ctsg_science_center_edu
+  233  git log
+  234  cat hello.py
+  235  cat >> hello.py
+  236  git add hello.py
+  237  git commit -m "Added World to hello.py"
+  238  git log
+  239  git push
+  240  cd ..
+  241  cd ..
+  242  cd tikhomirova_git
+  243  git branch -M main
+  244  git remote add origin https://github.com/zlatatikhomirova/tikhomirova_git.git
+  245  git push -u origin --all
+  246  git log --oneline --graph --all
+  247  git checkout main
+  248  git log --oneline --graph --all
+  249  git reset --hard HEAD~1
+  250  git merge web
+  251  git log --oneline --graph --all
+  252  git reset --hard HEAD~1
+  253  git log --oneline --graph --all
+  254  git reset b9292 --hard
+  255  git log --oneline --graph --all
+  256  git log --oneline --graph --all
+  257  git rebase -i b9292
+  258  git rebase -i b9292
+  259  git rebase --abort
+  260  git rebase -i b9292
+  261  git log --oneline --graph --all
+  262  git log --oneline --graph --all
+  263  git cherry-pick b929208
+  264  git log --oneline --graph --all
+  265  git revert --strategy resolve b929208
+  266  git log --oneline --graph --all
+  267  git reset --hard HEAD~1
+  268  git reset --hard HEAD~1
+  269  git log --oneline --graph --all
+  270  git reset --hard HEAD~1
+  271  git log --oneline --graph --all
+  272  git log --oneline --graph --all
+  273  git log --oneline --graph --all
+  274  cd rikhomirova_git
+  275  cd tikhomirova_git
+  276  git log --oneline --graph --all
+  277  git log --oneline --graph --all
+  278  git reset --hard HEAD~1
+  279  git log --oneline --graph --all
+  280  git rebase main web
+  281  git log --oneline --graph --all
+  282  git reset b9292 --hard
+  283  git log --oneline --graph --all
+  284  git reset b9292 --hard
+  285  git reset --hard HEAD~1
+  286  git reset --hard HEAD~1
+  287  git reset --hard HEAD~1
+  288  git reset --hard HEAD~1
+  289  git reset --hard HEAD~1
+  290  git log --oneline --graph --all
+  291  git log --oneline --graph --all
+  292  git checkout branch
+  293  git checkout main
+  294  git log --oneline --graph --all
+  295  ls
+  296  git checkout main
+  297  git log --oneline --graph --all
+  298  git reflog
+  299  git log --oneline --graph --all
+  300  git log --oneline --graph --all
+  301  git log --oneline --graph --all
+  302  git checkout 5d14474
+  303  git log --oneline --graph --all
+  304  mkdir task1_repo
+  305  cd task1_repo
+  306  git clone https://github.com/zlatatikhomirova/Nits_Task.git
+  307  cd Nits_Task
+  308  git log
+  309  git log --oneline --graph --all
+  310  ls
+  311  cat task_nits.txt
+  312  git checkout 42dccfa
+  313  ls
+  314  cat 3.txt
+  315  git branch
+  316  git log --oneline --graph --all
+  317  git checkout 507136f
+  318  git log --oneline --graph --all
+  319  git branch
+  320  cd ..
+  321  rm -f Nits_Task
+  322  r
+  323  rmdir  Nits_Task
+  324  rmdir -f  Nits_Task
+  325  rm -Rf Nits_Task
+  326  rm -Rf Nits_Task
+  327  ls
+  328  git clone https://github.com/zlatatikhomirova/Nits_Task.git
+  329  cd Nits_Task
+  330  git log --oneline --graph --all
+  331  git log
+  332  ls
+  333  cat task_nits.txt
+  334  git checkout 42dccfa
+  335  ls
+  336  cat 3.txt
+  337  git log --oneline --graph --all
+  338  git branch
+  339  git checkout 8b84f32
+  340  git branch
+  341  git checkout origin/scrum
+  342  git log --oneline --graph --all
+  343  git log
+  344  git checkout 0a732
+  345  git log --oneline --graph --all
+  346  ls
+  347  cat NextStep.txt
+  348  git log --oneline --graph --all
+  349  git log
+  350  git checkout 2140d
+  351  ls
+  352  cd boot/
+  353  ls
+  354  cat final.txt
+  355   git checkout maшт
+  356   git checkout main
+  357  git log --oneline --graph --all
+  358  cat key.txt
+  359  cat > key.txt
+  360  git add key.txt
+  361  git commit -m "Added key.txt as an answer"
+  362  git log --oneline --graph --all
+  363  git push origin main
+  364  ls
+  365  vim Task1_NITS
+  366  cat f.sh
+  367  cat > f.sh
+  368  bash f.sh
+  369  cat lab1.txt
+  370  mkdir exam_ctsg_sc
+  371  cd exam_ctsg_sc
+  372  git clone -b Tikhomirova_branch https://github.com/zlatatikhomirova/Tikhomirova.git
+  373  cd Tikhomirova
+  374  cp "/C/Users/Why Wonder/AppData/Roaming/DBeaverData/workspace6/General/Scripts/find_criminal.sql" .
+  375  ls
+  376  git add find_criminal.sql
+  377  git commit -m "Добавлен ответ на задание 4"
+  378  git push origin Tikhomirova_branch
+  379  history
