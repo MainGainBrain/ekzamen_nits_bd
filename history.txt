@@ -1,0 +1,14 @@
+1  mkdir ekzamen
+2  cd ekzamen
+3  git clone -b Voronov_branch https://github.com/Mitayro/Voronov
+4  cd ekzamen
+5  ls
+6  nano answer.txt
+7  git add answer.txt
+8  git commit -m "Добавлен ответ на задание 3"
+9  history > history.txt
+10 git add history.txt
+11 git commit -m "Добавлен history с командами Git"
+12 git push origin Voronov_branch
+13 exit
+
