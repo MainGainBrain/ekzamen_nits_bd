@@ -1,0 +1,26 @@
+Имя преступника: Натан
+IP-адрес: 10.10.5.59
+
+SQL-запросы:
+1. Поиск VLAN атаки:
+   SELECT vlan FROM security_journal WHERE vulnerability_id LIKE '%УБИ.041%' AND discovery_date BETWEEN '10-10-2024 17:20:00' AND '2024-10-10 17:30:00';
+
+2. Определение атакующего устройства:
+    SELECT id, ip_address, mac_address FROM pc WHERE vlan_pc IN (440, 445, 460, 455, 450, 465);
+
+3. Выяснение владельца устройства:
+    SELECT name, surname FROM employees WHERE pc IN (SELECT id FROM pc WHERE vlan_pc IN (440, 445, 460, 455, 450, 465));
+
+4. Проверка использования браузера:
+    SELECT application, session_time FROM applications WHERE application ILIKE '%ozil%' AND session_time BETWEEN '17:20:00' AND '17:30:00';
+
+5. Поиск преступника:
+   SELECT e.name, pc.ip_address
+FROM security_journal sj, employees e
+JOIN pc ON e.id = pc.id 
+JOIN applications app ON pc.id = app.id
+where sj.discovery_date BETWEEN '10-10-2024' AND '2024-10-10'
+    AND sj.vulnerability_id = 'УБИ.041'
+    AND app.application LIKE '%ozila%'
+    AND app.session_time = '17:25'
+limit 1;
