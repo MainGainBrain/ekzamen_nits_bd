@@ -1,0 +1,17 @@
+cd Desktop/
+  289   ls -a
+  290   cd kutuzov
+  291   ls -a
+  292   git add
+  293   git add kutuzov/
+  294   clear
+  295   git init
+  296   git add .
+  297   git add Ekzamen.txt
+  298   cd kutuzov/
+  299   ls -a
+  300   git add .
+  301   git commit -m Новые изменения
+  302   git push origin Kutuzov_branch
+  303   git push origin main
+  304   history

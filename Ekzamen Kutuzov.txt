@@ -1,0 +1,60 @@
+1. Сначала нашел запись об угрозе. 
+Определил vlan 460
+SELECT *
+FROM security_journal
+WHERE vulnerability_id = 'УБИ.041' AND discovery_date = '2024-10-10';
+
+
+2. Нашел ID компьютера, с которого запускался подозрительный браузер в 17:25
+SELECT source_pc FROM applications
+WHERE application ILIKE '%Firefox%' 
+AND session_time = '17:25';
+
+3. Определил IP-адрес этого компьютера
+SELECT ip_adress, vlan_pc 
+FROM pc
+WHERE id IN (
+    SELECT source_pc FROM applications
+    WHERE application ILIKE '%Firefox%' 
+    AND session_time = '17:25'
+);
+
+4. Посмотрел статус когда работают (status = 13)
+SELECT * FROM statuses 
+
+5. Определил сотрудника, который работал за этим компьютером в момент атаки
+
+SELECT e.name, e.surname, e.uid, p.ip_address
+FROM employees e
+JOIN pc p ON e.pc = p.id
+WHERE e.pc IN (
+    SELECT source_pc
+    FROM applications
+    WHERE application ILIKE '%Firefox%'
+    AND session_time = '17:25'
+) AND e.status = 13;
+
+Дионисия	Гурцких	5563	10.10.5.56
+Савел	Кварацхелия	1285	10.10.2.25
+Жерард	Пардон	3242	10.10.5.52
+Алексей	Сафранов	1223	10.10.2.26
+
+6. Далее проверял алиби 
+select * from employee_report where uid_employee = uid
+Оказалось подозрительным Алексей Сафранов
+58	1223	"Первую половину дня я занимался редактированием документации нашего отдела, а после обеда мы с Дианой Требияни собрались в переговорке и обсуждали функционал курса по Python, добавляли материалы на нашу шару"
+
+7. Проверил Диану Требияни
+
+SELECT status FROM employees  WHERE name = 'Диана' AND surname = 'Требияни' 
+
+Она была в отпуске (status = 11)
+
+Поэтому ответ:
+
+имя: Алексей Сафранов
+
+ip_адрес преступника: 10.10.2.26 
+
+
+
