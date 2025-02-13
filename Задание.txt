@@ -1,0 +1,14 @@
+SELECT e.name, pc.ip_address
+FROM security_journal sj, employees e
+JOIN pc ON e.id = pc.id 
+JOIN applications app ON pc.id = app.id
+where sj.discovery_date BETWEEN '10-10-2024' AND '2024-10-10'
+    AND sj.vulnerability_id = 'УБИ.041'
+    AND app.application LIKE '%ozila%'
+    AND app.session_time = '17:25'
+limit 1;
+ Впринципе можно и не писать limit 1, так как все равно выводятс одинаковые "Натаны".
+Запрос был выполнен с помощью одной комманды, так как при чтении легенда сразу стало все понятно, что сначала мы должны обратиться к security_journal, узнать имя и Ip адресс злоумышленника. 
+Далее при помощи Join мы объединяем строки из таблиц, а именно pc и e.id, applications app и  pc.id, соответственно из этого мы получаем два столбца name и ip_addres.
+Далее мы выбираем данные следуя легенде: дата, время, название угрозы и браузер в котором была атака.
+Имя и ip_адрес преступника: Натан 10.10.5.59Надеюсь выполнила правильно...

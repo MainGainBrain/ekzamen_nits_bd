@@ -1,0 +1,143 @@
+<<<<<<< HEAD
+Lenovo@NICHKA] ~ $      [ history
+    1  git --version
+    2  sudo apt install git
+    3  git --version
+    4  clear
+    5  pwd
+    6  ls ника
+    7  ды
+    8  ls
+    9  mkdir dir100
+   10  ls dir100
+   11  ~/.bashrc
+   12  vim ~/.bashrc
+   13  sourse~/.bashrc
+   14  source~/.bashrc
+   15  source ~/.bashrc
+   16  repool (master)
+   17  vim ~/.bashrc
+   18  source ~/.bashrc
+   19  ls
+   20  git config --global user.name "My Name"
+   21  git config --global user.name "NICHKA"
+   22  git config --list
+   23  cd Desktop
+   24  mkdir Vionika
+   25  cd Vionika
+   26  clear
+   27  cd Desktop
+   28  clear
+   29  cd Desktop
+   30  mkdir nikii
+   31  cd nikii
+   32  cd Desktop vionica
+   33  clear
+   34  cd Desktop
+   35  mkdir examen
+   36  cd
+   37  clear
+   38  cd Desktop
+   39  mkdir exmean
+   40  gicd exmean
+   41  cd examen
+   42  cd nikii
+   43  clear
+   44  ls
+   45  mkdir nika
+   46  cd nika
+   47  git clone https://github.com/nichka2/khokhlova.git
+   48  cd khokhlova
+   49  git log
+   50  git status
+   51  git add
+   52  git add .
+   53  git add Задание.txt
+   54  git status
+   55  git commit -m "Добавлен ответ на задание"
+   56  git push origin khokhlova
+   57  git push origin main
+   58  git push -u origin main
+   59  cd
+   60  cd Desktop
+   61  cd nika
+   62  cd khokhlova
+   63  git status
+   64  git commit -m "Обновленно"
+   65  git push origin main
+   66  echo >> Задание.txt "Надеюсь выполнила правильно..."
+   67  cat Задание.txt
+   68  cd
+   69  history
+=======
+Lenovo@NICHKA] ~ $      [ history
+    1  git --version
+    2  sudo apt install git
+    3  git --version
+    4  clear
+    5  pwd
+    6  ls ника
+    7  ды
+    8  ls
+    9  mkdir dir100
+   10  ls dir100
+   11  ~/.bashrc
+   12  vim ~/.bashrc
+   13  sourse~/.bashrc
+   14  source~/.bashrc
+   15  source ~/.bashrc
+   16  repool (master)
+   17  vim ~/.bashrc
+   18  source ~/.bashrc
+   19  ls
+   20  git config --global user.name "My Name"
+   21  git config --global user.name "NICHKA"
+   22  git config --list
+   23  cd Desktop
+   24  mkdir Vionika
+   25  cd Vionika
+   26  clear
+   27  cd Desktop
+   28  clear
+   29  cd Desktop
+   30  mkdir nikii
+   31  cd nikii
+   32  cd Desktop vionica
+   33  clear
+   34  cd Desktop
+   35  mkdir examen
+   36  cd
+   37  clear
+   38  cd Desktop
+   39  mkdir exmean
+   40  gicd exmean
+   41  cd examen
+   42  cd nikii
+   43  clear
+   44  ls
+   45  mkdir nika
+   46  cd nika
+   47  git clone https://github.com/nichka2/khokhlova.git
+   48  cd khokhlova
+   49  git log
+   50  git status
+   51  git add
+   52  git add .
+   53  git add Задание.txt
+   54  git status
+   55  git commit -m "Добавлен ответ на задание"
+   56  git push origin khokhlova
+   57  git push origin main
+   58  git push -u origin main
+   59  cd
+   60  cd Desktop
+   61  cd nika
+   62  cd khokhlova
+   63  git status
+   64  git commit -m "Обновленно"
+   65  git push origin main
+   66  echo >> Задание.txt "Надеюсь выполнила правильно..."
+   67  cat Задание.txt
+   68  cd
+   69  history
+>>>>>>> c3c1e82c9a001d15d9ab13e4eb798fb1c1aa6bd3
