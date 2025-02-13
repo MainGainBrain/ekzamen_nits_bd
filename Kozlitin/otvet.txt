@@ -1,0 +1,11 @@
+SELECT e.name, pc.ip_address
+FROM security_journal sj, employees e
+JOIN pc ON e.id = pc.id 
+JOIN applications app ON pc.id = app.id
+where sj.discovery_date BETWEEN '10-10-2024' AND '2024-10-10'
+    AND sj.vulnerability_id = 'УБИ.041'
+    AND app.application LIKE '%ozila%'
+    AND app.session_time = '17:25'
+limit 1;
+ 
+ВОР ПРЕСТУПНИК И МОШЕННИК = 'Натан 10.10.5.59'
