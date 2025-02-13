@@ -1,0 +1,18 @@
+378  cd /c/Users/Kirill/Dekstop
+  379  mkdir EXAMEN
+  380  cd EXAMEN
+  381  git clone https://github.com/Keydone1/Kozlitin/tree/Kozlitin_branch
+  382  git clone https://github.com/Keydone1/Kozlitin.git
+  383  git status
+  384  git status otvet
+  385  git status otvet.txt
+  386  ls
+  387  cd Kozlitin/
+  388  ls
+  389  git status
+  390  git add ovet.txt
+  391  git add otvet.txt
+  392  git commit -m "add otvet.txt"
+  393  git push origin
+  394  https://github.com/Keydone1/Kozlitin.git
+  395  history
