@@ -1,0 +1,266 @@
+    1  cd
+    2  cd Загрузки/
+    3  cd Загрузки
+    4  cd
+    5  cd f
+    6  cd f
+    7  cd Рабочий стол
+    8  cd Доументы
+    9  ьлвшк
+   10  mkdir
+   11  mkdir
+   12  cd C
+   13  git clone https://gitlab.com/ilya_s/lab_3530904_10005.git
+   14  git branch
+   15  git branch
+   16  git checkout -b soboleva_lab1
+   17  git checkout -b soboleva_lab1
+   18  cd soboleva_anastasiya
+   19  git brunch
+   20  git branch
+   21  #! /bin/sh
+   22  #
+   23  # $Id: autogen.sh,v 1.2 2008/11/23 06:38:55 gtkwave Exp $
+   24  #
+   25  # Run the various GNU autotools to bootstrap the build
+   26  # system.  Should only need to be done once.
+   27  # for now avoid using bash as not everyone has that installed
+   28  CONFIG_SHELL=/bin/sh
+   29  export CONFIG_SHELL
+   30  echo "Running aclocal..."
+   31  aclocal $ACLOCAL_FLAGS || exit 1
+   32  #!/bin/sh
+   33  echo "Cleaning out SVN directories..."
+   34  find . | grep '\.svn' | tac | awk '{print "rm -rf "$0}' | sh
+   35  echo "Making distribution tarball from SVN directory..."
+   36  cd ../
+   37  cat ./gtkwave3/configure.ac | grep AC_INIT | awk '{print $2}' | sed 's/,//' | 	awk '{print "mv gtkwave3 gtkwave-"$0" ; tar cvf gtkwave-"$0".tar gtkwave-"$0" ; gzip -9 gtkwave-"$0".tar"}' | sh
+   38  echo "Done!"
+   39  git --version
+   40  pwd
+   41  pwd
+   42  ls
+   43  mkdir test
+   44  rouch file.txt
+   45  touch file.txt
+   46  cat file.txt
+   47  rm file.txt
+   48  ifconfig
+   49  sudo
+   50  vim ~/.bashrc
+   51  source ~/.bashrc
+   52  whoami 
+   53  mkdir Soboleva
+   54  cd Soboleva
+   55  git init
+   56  ls > file1.txt
+   57  whoami > file2.txt
+   58  git add file2.txt
+   59  git commit -m "Добавлен файл с пользователем"
+   60  vim ~/.bashrc
+   61  source ~/.bashrc
+   62  source ~/.bashrc
+   63  git init
+   64  cd Soboleva
+   65  ls > file1.txt
+   66  whoami > file2.txt
+   67  git add file2.txt
+   68  git commit -m "Добавлен файл с пользователем"
+   69  git info
+   70  git add file2.txt\
+   71  git add file2.txt
+   72  git commit -m "Добавлен файл с пользователем"
+   73  ls file2.txt 
+   74  whoami > file2.txt
+   75  git add file2.txt
+   76  git commit -m "Добавлен файл с пользователем"
+   77  git status
+   78  git add file2.txt
+   79  git status
+   80  git commit -m "Добавлен файл с пользователем"
+   81  git add file2.txt
+   82  git commit -m "Добавлен файл с пользователем" file2.txt
+   83  git add file2.txt
+   84  git commit -m "Добавлен файл с пользователем" file2.txt
+   85  git commit -m "Добавлен файл с пользователем"
+   86  git status
+   87  git add file2.txt
+   88  git status
+   89  git log -- file2.txt
+   90  git log --oneline --graph --all
+   91  groups >> file2.txt
+   92  cat file2.txt 
+   93  git add file2.txt
+   94  git commit -m "Добавлен вывод групп в файл2.txt"
+   95  git add file1.txt
+   96  git commit -m "Добавлен файл с выводом списка файлов"
+   97  git checkout HEAD~2
+   98  cat file1.txt
+   99  cat file2.txt
+  100  git checkout HEAD~
+  101  git checkout HEAD
+  102  git checkout master
+  103  git log --oneline --graph --all
+  104  git checkout HEAD~1
+  105  git log --oneline --graph --all
+  106  git checkout master
+  107  cat file1.txt
+  108  git checkout HEAD~1
+  109  cat file1.txt
+  110  git checkout -b dev
+  111  echo "Com4" > file4.txt
+  112  git add file4.txt
+  113  git commit -m "com4"
+  114  echo "Com5" > file5.txt
+  115  git add file5.txt
+  116  git commit -m "com5"
+  117  git checkout master
+  118  git log --oneline --graph --all
+  119  git checkout -b web
+  120  echo "Com6" > file6.txt
+  121  git add file6.txt
+  122  git commit -m "com6"
+  123  echo "Com7" > file7.txt
+  124  git add file7.txt
+  125  git commit -m "com7"
+  126  git checkout master
+  127  echo "Com8" > file8.txt
+  128  git add file8.txt
+  129  git commit -m "com8"
+  130  git log --oneline --graph --all
+  131  git reset --hard
+  132  git reset --hard 09fd406 
+  133  git log --oneline --graph --all
+  134  echo "Com8" > file8.txt
+  135  git commit -m "com8"
+  136  git add file8.txt
+  137  git commit -m "com8"
+  138  git log --oneline --graph --all
+  139  git checkout HEAD 09fd406
+  140  git checkout 09fd406
+  141  git log --oneline --graph --all
+  142  git checkout web
+  143  git merge dev
+  144  git log --oneline --graph --all
+  145  git checkout master
+  146  git merge web
+  147  git log --oneline --graph --all
+  148  git log --oneline --graph --all
+  149  git clone https://github.com/Nayzzerr/repo1.git
+  150  cd repo1
+  151  echo "This is a new file" > newfile.txt
+  152  git add newfile.txt
+  153  git commit -m "Added a new file: newfile.txt"
+  154  git push origin main
+  155  cd ..
+  156  git log --oneline --graph --all
+  157  git branch -M main
+  158  git remote add origin https://github.com//.git
+  159  git push -u origin main
+  160  git remote add origin https://github.com/Nayzzerr/my-local-repo.git
+  161  git remote remove origin
+  162  git push -u origin main
+  163  git remote add origin https://github.com/Nayzzerr/my-local-repo.git
+  164  git push -u origin main
+  165  git clone https://github.com/Nayzzerr/Nits_Task
+  166  git clone https://github.com/Nayzzerr/Nits_Task
+  167  rm Nits_Task/
+  168  rm -r Nits_Task/
+  169  rm -r Nits_Task/
+  170  rm -r Nits_Task/
+  171  git clone https://github.com/Nayzzerr/Nits_Task
+  172  cd Nits_Task/
+  173  git log
+  174  git log --oneline --graph --all
+  175  git branch -a
+  176  git show 491fac5
+  177  git show 491fac5
+  178  git log --oneline --graph --all
+  179  git 
+  180  git log --oneline --graph --all
+  181  git show 507136f
+  182  git show babc205
+  183  git show Comm1
+  184  git 2140d31
+  185  git show 2140d31
+  186  git checkout secret 
+  187  git show bf26b6d
+  188  git log --oneline --graph --all
+  189  git show 60fc3f5
+  190  git show 529ebd2
+  191  git show fb0a932
+  192  git checkout main
+  193  git log --oneline --graph --all
+  194  git show 2140d31
+  195  git show babc205
+  196  git show bf26b6d
+  197  git show 60fc3f5
+  198  git show 529ebd2
+  199  git show fb0a932
+  200  git show 8cfcdba
+  201  git show 507136f
+  202  git show 0a73299
+  203  git 
+  204  git show 9d97c07
+  205  git show 8b84f32
+  206  git show 42dccfa
+  207  git show 491fac5
+  208  ls
+  209  cd task_nits.txt 
+  210  ls
+  211  cat task_nits.txt 
+  212  git checkout 42dccfa
+  213  ls
+  214  cat 1.txt 
+  215  git checkout waterfall
+  216  git checkout fb0a932
+  217  ls
+  218  cat NextStep.txt 
+  219  git checkout secret 
+  220  ls
+  221  cst final.txt 
+  222  cat final.txt 
+  223  git checkout main 
+  224  git log --oneline --graph --all
+  225  git checkout 5bd36e4
+  226  ls
+  227  cat nothing_here.txt
+  228  git checkout 0a73299
+  229  ls
+  230  cat NextStep.txt 
+  231  git checkout 2140d31
+  232  ls
+  233  cd boot/
+  234  ls
+  235  cat final.txt 
+  236  git checkout main
+  237  echo "золотаязвездаипочётноеупоминание" > key.txt
+  238  git add key.txt
+  239  git commit -m "Добавлен файл с ключом"
+  240  git push origin main
+  241  git reset --hard HEAD~1
+  242  cd ..
+  243  cd boot/
+  244  git restore --staged .
+  245  git restore key.txt
+  246  git push origin +main
+  247  cd ..
+  248  echo "золотаязвездаипочётноеупоминание" > key.txt
+  249  git add key.txt
+  250  git commit -m "Добавлен файл с ключом"
+  251  git push origin main
+  252  cd ~/Desktop
+  253  cd /c/Users/$(whoami)/"Рабочий стол"
+  254  cd /c/Users/$(whoami)/Desktop
+  255  cd C:\Users\nasty\OneDrive\Рабочий стол>
+  256  cd C:\Users\nasty\OneDrive\Рабочий стол>
+  257  cd "/c/Users/nasty/OneDrive/Рабочий стол"
+  258  mkdir my_project
+  259  cd my_project
+  260  git clone -b Soboleva_branch https://github.com/nayzzerr/ekzamen_nits_bd.git 
+  261  git clone -b Soboleva_branch https://github.com/nayzzerr/Soboleva.git 
+  262  cd Soboleva
+  263  git add result.txt
+  264  git commit -m "Добавлен файл с результатами третьего задания"
+  265  git push origin Soboleva_branch
+  266  history > history.txt
